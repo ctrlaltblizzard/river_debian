@@ -94,9 +94,6 @@ As per River's Requirements, we need Zig 0.13.0
 
 `wget https://ziglang.org/download/0.13.0/zig-linux-x86_64-0.13.0.tar.xz`
 
-> [!NOTE]
-> If you'll only install River, do the following.
-
 Extract the tarball
 
 `tar -xf zig-linux-x86_64-0.13.0.tar.xz` - Optional, you can use `-xvf` to enable verbose output.
