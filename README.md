@@ -107,7 +107,7 @@ Extract the tarball
 # Source `PATH` 
 `export PATH="$PATH:/usr/local/bin/"`
 
-> (notice the double-quotation marks, they are *included*.
+> (notice the double-quotation marks, they are *included*.)
 > 
 > check if zig works by doing `zig version`
 
