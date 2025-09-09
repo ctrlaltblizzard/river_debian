@@ -143,7 +143,12 @@ Then move the `init` file from the `river` repository
 
 > Afterwards, this should be good to go.
 >
-> To use river, just type `river`.
 
+# To use river, just type `river`.
+
+### To-Do List:
+- [ ] Cleaner Look of this guide
+- [ ] Add Ly Display Manager as an option to install and detect River
+- [ ] Complete the guide
 
 
