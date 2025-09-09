@@ -2,7 +2,9 @@
 
 > [!NOTE]
 > This is a work in progress. Changes will occur very often until completely done.
-> 
+>
+> This only covers the installation of River. To configure it, refer to [river/wiki](https://codeberg.org/river/wiki).
+>
 > Installation has been done through 'Expert Install' on '[netinst](https://cdimage.debian.org/debian-cd/current/amd64/iso-cd/debian-13.1.0-amd64-netinst.iso)' ISO.
 
 (To enable non-free, and some other configurations that cannot be done on standard install.)
@@ -145,6 +147,12 @@ Then move the `init` file from the `river` repository
 >
 
 # To use river, just type `river`.
+
+## Sources used:
+
+- [Debian Packages](https://www.debian.org/distrib/packages)
+
+- [riverwm/river](https://github.com/riverwm/river)
 
 ### To-Do List:
 - [ ] Cleaner Look of this guide
