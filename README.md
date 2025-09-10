@@ -293,7 +293,23 @@ Now, it should look like `custom_sessions = /usr/local/share/wayland-sessions/`
 
 And then reboot. Ly should now detect River. Enjoy.
 
+### Cleanup
+
+Remove tarballs and cloned repositories
+```
+# Tarballs
+rm *.tar.xz
+
+# Cloned Repositories
+rm -rf zig-x86_64-linux-0.13.0 zig-x86_64-linux-0.15.1
+sudo rm -rf ly/
+```
+> [!CAUTION]
+> ***NEVER*** try doing `rm *`, this can remove files that you might need, potentially breaking the system as well.
+
 ## Sources used:
+
+- [Debian Packages](https://www.debian.org/distrib/packages)
 
 - [Zig Programming Language](https://ziglang.org/)
 
@@ -303,8 +319,6 @@ And then reboot. Ly should now detect River. Enjoy.
 
 - [fairyglade/ly](https://github.com/fairyglade/ly)
 
-- [Debian Packages](https://www.debian.org/distrib/packages)
-
 - [riverwm/river](https://github.com/riverwm/river)
 
 ### To-Do List:
@@ -312,4 +326,4 @@ And then reboot. Ly should now detect River. Enjoy.
 - [x] Add Ly Display Manager as an option to install and detect River
 - [x] Complete the guide
 
-
+<h6 align="center"> I would also like to thank hpsaucii from Debian Discord Server for helping me check this guide. </h6>
