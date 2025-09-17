@@ -150,11 +150,11 @@ There are two ways to compile River. One *without* the `xwayland` package instal
 
 ## *Without* `xwayland`
 ```
-zig build -Doptimize=ReleaseSafe --prefix ~/.local install
+/usr/local/bin/zig-13/zig build -Doptimize=ReleaseSafe --prefix ~/.local install
 ```
 ## *With* `xwayland`
 ```
-zig build -Dxwayland -Doptimize=ReleaseSafe --prefix ~/.local install
+/usr/local/bin/zig-13/zig build -Dxwayland -Doptimize=ReleaseSafe --prefix ~/.local install
 ```
 # Finishing touches
 Assuming you have installed the packages needed, this should work just fine. If it fails, try to include the packages provided below each categories.
@@ -249,6 +249,12 @@ systemctl disable getty@tty2.service
 
 ### Configure Ly to detect River
 
+> [!NOTE]
+> This also works for [SDDM.](https://github.com/sddm/sddm)
+
+> If you have a Login Manager already installed, River will ***not*** appear, as it was not built to support login managers. However, it works by following the configuration below.
+> For more information, refer to the [wiki.](https://codeberg.org/river/wiki#river-does-not-appear-in-my-display-managers-session-selector)
+
 Create folder first for river.desktop
 ```
 sudo mkdir -p /usr/local/share/wayland-sessions/
@@ -259,6 +265,8 @@ From river/contrib - copy river.desktop
 cd river/contrib/
 sudo cp river.desktop /usr/local/share/wayland-sessions/
 ```
+> [!NOTE]
+> To avoid confusion between SDDM and Ly, the configuration below is now specified for Ly. SDDM will automically detect River after applying the configuration above. When in doubt, just reboot.
 
 Edit `/etc/ly/config.ini`
 ```
@@ -319,7 +327,11 @@ sudo rm -rf ly/
 
 - [fairyglade/ly](https://github.com/fairyglade/ly)
 
+- [SDDM](https://github.com/sddm/sddm)
+
 - [riverwm/river](https://github.com/riverwm/river)
+
+- [river/wiki](https://codeberg.org/river/wiki)
 
 ### To-Do List:
 - [ ] Cleaner look of this guide
